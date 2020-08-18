@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Template</title>
+    <link rel="stylesheet" href="template.css">
+  </head>
+  <body>
+
+    <div class="display-master-main">
+      <nav class='nav-main'>
+        <div class="nav-main-exit">
+          <img class="fill-my-color" src=".\images\x.svg" alt="">
+        </div>
+        <div class="logo">
+          <img src="./images/david.png" alt="user">
+        </div>
+        <ul>
+          <li><a href="..\..\index.html">Home</a></li>
+          <li><a href="..\..\portfolio.html">Portfolio</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">LinkedIn</a></li>
+        </ul>
+      </nav>
+
+      <div class="header">
+
+        <!-- toggle sidenav -->
+        <div class="header-div1">
+          <div class="toggleNav">
+            <img src=".\images\cube.svg" alt="">
+          </div>
+        </div>
+
+        <!-- title -->
+        <div class="header-div2">
+          <h1 class="h1">Template</h1>
+        </div>
+
+        <!-- resize button -->
+        <div class="header-div3">
+          <div id="toggleSize" class="toggleSize g-highlight">
+            <img class="fill-my-color" src=".\images\rectangle.svg" alt="screen">
+          </div>
+        </div>
+      </div>
+
+      <div class="display-main">
+
+        <!-- left side -->
+        <div class="html-btn g-highlight"></div>
+        <div class="css-btn g-highlight"></div>
+        <div class="js-btn g-highlight"></div>
+
+        <div class="d1-1">
+          <!-- html -->
+          <div class="d1-1-html">
+<pre class="pre-text">
+<strong><u>html</u></strong>
+<!-- encoded html here -->
+&lt;!DOCTYPE html&gt;&#10;&lt;html lang=&#34;en&#34;&gt;&#10;&lt;head&gt;&#10;    &lt;meta charset=&#34;UTF-8&#34;&gt;&#10;    &lt;meta name=&#34;viewport&#34; content=&#34;width=device-width, initial-scale=1.0&#34;&gt;&#10;    &lt;link rel=&#34;stylesheet&#34; href=&#34;style.css&#34;&gt;&#10;    &lt;title&gt;Render&lt;/title&gt;&#10;&lt;/head&gt;&#10;&lt;body&gt;&#10;    &lt;script src=&#34;./code/express.js&#34;&gt;&lt;/script&gt;&#10;    &lt;script src=&#34;script.js&#34;&gt;&lt;/script&gt;&#10;&lt;/body&gt;&#10;&lt;/html&gt;
+<!-- encoded html here -->
+</pre>
+          </div>
+          <!-- css -->
+          <div class="d1-1-css notVisable">
+<pre class="pre-text">
+<strong><u>css</u></strong>
+<!-- css here -->
+@import url('https://fonts.googleapis.com/css?family=Lato&amp;display=swap');&#10;&#10;* {&#10;  box-sizing: border-box;&#10;  margin: 0;&#10;  padding: 0;&#10;}&#10;&#10;:root {&#10;  --box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12), 0 2px 3px rgba(0, 0, 0, 0.24);&#10;}&#10;&#10;body {&#10;  font-family: 'Lato', sans-serif;&#10;  overflow-x: hidden;&#10;}&#10;&#10;.hide-overflow {&#10;  overflow: hidden;&#10;}&#10;&#10;::selection {&#10;  background: #32ff7e50;&#10;}&#10;&#10;/* width */&#10;::-webkit-scrollbar {&#10;  width: 10px;&#10;  height: 10px;&#10;}&#10;&#10;/* Track */&#10;::-webkit-scrollbar-track {&#10;  background: #4b4b4b;&#10;}&#10;&#10;/* Handle */&#10;::-webkit-scrollbar-thumb {&#10;  background: #888;&#10;}&#10;&#10;/* Handle on hover */&#10;::-webkit-scrollbar-thumb:hover {&#10;  background: #999;&#10;}&#10;&#10;::-webkit-scrollbar-corner {&#10;  background: #4b4b4b;&#10;}&#10;&#10;.display-master-main {&#10;  background: #3d3d3d;&#10;  height: 100vh;&#10;}&#10;&#10;.show-nav-main {&#10;  transform: translateX(200px);&#10;}&#10;&#10;.hide-toggleNav {&#10;  transform: translateX(-200px);&#10;}&#10;&#10;.nav-main {&#10;  background-color: rgba(69, 69, 69, 0.9);&#10;  border-right: 2px solid rgba(200, 200, 200, 0.1);&#10;  color: #fff;&#10;  /* positions .nav-main container outside the flow of elements */&#10;  position: absolute;&#10;  top: 0;&#10;  left: -200px;&#10;  width: 200px;&#10;  height: 100vh;&#10;  z-index: 1000;&#10;  transition: transform 0.3s ease;&#10;  overflow-y: auto;&#10;}&#10;&#10;.nav-main-exit {&#10;  position: absolute;&#10;  padding: 4px;&#10;  right: 5px;&#10;  top: 5px;&#10;  height: 30px;&#10;  width: 30px;&#10;}&#10;&#10;.nav-main-exit img {&#10;  height: 100%;&#10;  text-align: center;&#10;  user-select: none;&#10;}&#10;&#10;.nav-main-exit:hover {&#10;  cursor: pointer;&#10;}&#10;&#10;.nav-main .logo {&#10;  padding: 30px 0;&#10;  text-align: center;&#10;}&#10;&#10;.nav-main .logo img {&#10;  height: 75px;&#10;  width: 75px;&#10;  border-radius: 50%;&#10;  filter: opacity(60%) brightness(120%);&#10;  border: solid 1px #0003;&#10;  user-select: none;&#10;}&#10;&#10;.nav-main ul {&#10;  padding: 0;&#10;  list-style-type: none;&#10;  margin: 0;&#10;}&#10;&#10;.nav-main ul li {&#10;  border-bottom: 2px solid rgba(200, 200, 200, 0.3);&#10;  padding: 20px;&#10;}&#10;&#10;/* pseudo selector */&#10;.nav-main ul li:first-of-type {&#10;  border-top: 2px solid rgba(200, 200, 200, 0.3);&#10;}&#10;&#10;.nav-main ul li a {&#10;  color: #fff;&#10;  text-decoration: none;&#10;}&#10;&#10;.nav-main ul li a:hover {&#10;  text-decoration: underline;&#10;}&#10;&#10;.header {&#10;  width: 95%;&#10;  height: 10vh;&#10;  display: flex;&#10;  justify-content: space-around;&#10;  color: #fff;&#10;}&#10;&#10;.toggleNav {&#10;  position: absolute;&#10;  height: 7.5vh;&#10;  top: 1.25vh;&#10;  left: 1vw;&#10;  transition: transform 0.3s ease;&#10;  z-index: 8;&#10;}&#10;&#10;.toggleNav img {&#10;  height: 100%;&#10;  user-select: none;&#10;}&#10;&#10;.toggleNav :hover {&#10;  cursor: pointer;&#10;}&#10;&#10;.header-div2 {&#10;  display: flex;&#10;  align-items: center;&#10;  width: 100%;&#10;  color: #eee;&#10;}&#10;&#10;.h1 {&#10;  margin: auto;&#10;  font-size: 5vh;&#10;}&#10;&#10;.toggleSize {&#10;  position: absolute;&#10;  top: 5%;&#10;  right: 5%;&#10;  height: 5vh;&#10;  width: 5vh;&#10;  padding: 1vh;&#10;  z-index: 1000;&#10;  transition: transform 0.3s ease;&#10;  display: flex;&#10;  align-items: center;&#10;  justify-content: center;&#10;}&#10;&#10;.toggleSize img {&#10;  height: 100%;&#10;  width: 100%;&#10;  user-select: none;&#10;}&#10;&#10;.toggleSize2 {&#10;  transform: translate(calc(5vw - 11px), calc(-100% + 10px));&#10;}&#10;&#10;.fill-my-color {&#10;  filter: invert(99%) sepia(2%) saturate(214%) hue-rotate(49deg) brightness(114%) contrast(87%);&#10;}&#10;&#10;.display-main {&#10;  background-color: #4b4b4b;&#10;  height: calc(80vh);&#10;  width: 90vw;&#10;  position: relative;&#10;  margin-left: auto;&#10;  margin-right: auto;&#10;  box-shadow: var(--box-shadow);&#10;  display: flex;&#10;  justify-content: space-between;&#10;}&#10;&#10;.html-btn {&#10;  position: absolute;&#10;  background-color: #6bcc75;&#10;  height: 13.33vh;&#10;  width: 20px;&#10;  left: -20px;&#10;}&#10;&#10;.css-btn {&#10;  position: absolute;&#10;  background-color: #ccc;&#10;  height: 13.33vh;&#10;  width: 20px;&#10;  top: calc(13.33vh + 1px);&#10;  left: -20px;&#10;}&#10;&#10;.js-btn {&#10;  position: absolute;&#10;  background-color: #ccc;&#10;  height: 13.33vh;&#10;  width: 20px;&#10;  top: calc(26.66vh + 2px);&#10;  left: -20px;&#10;}&#10;&#10;.g-highlight:hover {&#10;  background-color: #76d07f!important;&#10;  cursor: pointer;&#10;  box-shadow: var(--box-shadow);&#10;}&#10;&#10;.d1-1 {&#10;  margin: 1vh;&#10;  flex: 1;&#10;  display: block;&#10;  overflow: auto;&#10;}&#10;&#10;.d1-1-html {&#10;  padding: 5px;&#10;  flex: 1 1 auto;&#10;  overflow-y: auto;&#10;  min-height: 30%&#10;}&#10;&#10;.d1-1-css {&#10;  padding: 5px;&#10;  flex: 1 1 auto;&#10;  overflow-y: auto;&#10;  min-height: 30%&#10;}&#10;&#10;.d1-1-js {&#10;  padding: 5px;&#10;  flex: 1 1 auto;&#10;  overflow-y: auto;&#10;  min-height: 30%&#10;}&#10;&#10;.pre-text {&#10;  color: #eee;&#10;}&#10;&#10;.span-comment {&#10;  color: #bbbd;&#10;}&#10;&#10;.notVisable {&#10;  display: none;&#10;}&#10;&#10;.d2-1 {&#10;  background-color: #4b4b4b;&#10;  margin: 1vh;&#10;  border: 1px solid #3d3d3d;&#10;  box-shadow: var(--box-shadow);&#10;  flex: 2;&#10;  overflow: none;&#10;  user-select: none;&#10;}&#10;&#10;.body {&#10;  position: relative;&#10;  overflow: auto;&#10;  height: 100%;&#10;  width: 100%;&#10;  border: none;&#10;  z-index: 10;&#10;}&#10;&#10;.body2 {&#10;  position: fixed;&#10;  height: 100vh;&#10;  left: 0;&#10;  top: 0;&#10;}&#10;&#10;.display-main-links-master-container {&#10;  position: absolute;&#10;  display: flex;&#10;  justify-content: space-around;&#10;  height: calc(10vh);&#10;  width: 90vw;&#10;  top: calc(90vh);&#10;  left: 5vw;&#10;}&#10;&#10;.display-main-links-container {&#10;  flex: 1;&#10;  display:flex;&#10;  align-items: center;&#10;}&#10;&#10;.display-main-links-container:last-of-type {&#10;  flex-flow: row-reverse;&#10;}&#10;&#10;.display-main-link {&#10;  color: #eee;&#10;}&#10;&#10;.display-main-link:visited {&#10;  color: #eee;&#10;}&#10;&#10;.display-main-link:hover {&#10;  color: #6bcc75;&#10;}&#10;&#10;@media screen and (max-width:1024px) {&#10;  .display-main {&#10;    flex-direction: column;&#10;  }&#10;}&#10;&#10;/* header */&#10;@media screen and (max-height:500px) {&#10;&#10;  .display-master-main {&#10;    height: 500px;&#10;    width: calc(100vw);&#10;  }&#10;&#10;  .header {&#10;    height: 50px;&#10;  }&#10;&#10;  .toggleNav {&#10;    height: calc(50px * .75);&#10;    top: 5px;&#10;  }&#10;&#10;  .h1 {&#10;    margin: auto;&#10;    font-size: 25px;&#10;  }&#10;&#10;  .toggleSize {&#10;    height: 25px;&#10;    width: 25px;&#10;    top: 25px;&#10;    right: calc(5vw - 10px);&#10;  }&#10;&#10;  .toggleSize img {&#10;    height: 15px;&#10;    width: 15px;&#10;}&#10;&#10;  .toggleSize2 {&#10;    right: 5vw;&#10;  }&#10;&#10;  .display-main {&#10;    height: 400px;&#10;  }&#10;&#10;  .html-btn {&#10;    height: 66.66px;&#10;  }&#10;&#10;  .css-btn {&#10;    height: 66.66px;&#10;    top: calc(66.66px + 1px);&#10;  }&#10;&#10;  .js-btn {&#10;    height: 66.66px;&#10;    top: calc(133.33px + 2px);&#10;  }&#10;&#10;  .d1-1 {&#10;    margin: 5px;&#10;  }&#10;&#10;  .d2-1 {&#10;    margin: 5px;&#10;  }&#10;&#10;  .display-main-links-master-container {&#10;    height: 50px;&#10;    top: 450px;&#10;  }&#10;&#10;}&#10;
+<!-- css here -->
+</pre>
+          </div>
+          <!-- js -->
+          <div class="d1-1-js notVisable">
+<pre class="pre-text">
+<strong><u>js</u></strong>
+<!-- js here -->
+(function(window){
+  window.htmlentities = {
+  /***@param {String} str **/
+  encode : function(str) {
+    var buf = [];
+    for (var i=str.length-1;i>=0;i--) {
+      buf.unshift(['&#', str[i].charCodeAt(), ';'].join(''));
+    }
+    return buf.join('');
+  },
+};
+})(window);
+let htmlCode = [];&#10;let cssCode = [];&#10;let jsCode = [];&#10;let count = 0;&#10;for (i in array) {&#10;    count = 0;&#10;    let pre;&#10;    let string;&#10;    let code = '';&#10;    let card = document.createElement('div');&#10;    card.classList.add('card');&#10;    let html = document.createElement('div');&#10;    html.classList.add('code');&#10;    pre = document.createElement('pre');&#10;    pre.classList.add('tag');&#10;    pre.innerHTML = htmlentities.encode('&lt;html&gt;');&#10;    html.appendChild(pre);&#10;    for (j in array[i][0]) {&#10;        pre = document.createElement('pre');&#10;        if (array[i][0][j].comment) {&#10;            pre.classList.add('comment');&#10;            pre.innerHTML = htmlentities.encode('&lt;!-- ' + array[i][0][j].comment + ' --&gt;');&#10;            string = '';&#10;        } else {&#10;            string = array[i][0][j].html;&#10;            pre.innerHTML = htmlentities.encode(string);&#10;        }&#10;        code += string;&#10;        html.appendChild(pre);&#10;        count++;&#10;    }&#10;    pre = document.createElement('pre');&#10;    pre.classList.add('tag');&#10;    pre.innerHTML = htmlentities.encode('&lt;/html&gt;');&#10;    html.appendChild(pre);&#10;    if (count != 0) card.appendChild(html);&#10;    htmlCode.push(code);&#10;    code = '';&#10;    count = 0;&#10;    let css = document.createElement('div');&#10;    css.classList.add('code');&#10;    pre = document.createElement('pre');&#10;    pre.classList.add('tag');&#10;    pre.innerHTML = htmlentities.encode('&lt;style&gt;');&#10;    css.appendChild(pre);&#10;    for (j in array[i][1]) {&#10;        pre = document.createElement('pre');&#10;        if (array[i][1][j].comment) {&#10;            pre.classList.add('comment');&#10;            pre.innerHTML = htmlentities.encode('/* ' + array[i][1][j].comment + ' */');&#10;            string = '';&#10;        } else {&#10;            string = array[i][1][j].css;&#10;            pre.innerHTML = htmlentities.encode(string);&#10;        }&#10;        code += string;&#10;        css.appendChild(pre);&#10;        count++;&#10;    }&#10;    pre = document.createElement('pre');&#10;    pre.classList.add('tag');&#10;    pre.innerHTML = htmlentities.encode('&lt;/style&gt;');&#10;    css.appendChild(pre);&#10;    if (count != 0) card.appendChild(css);&#10;    cssCode.push(code);&#10;    code = '';&#10;    count = 0;&#10;    let js = document.createElement('div');&#10;    js.classList.add('code');&#10;    pre = document.createElement('pre');&#10;    pre.classList.add('tag');&#10;    pre.innerHTML = htmlentities.encode('&lt;script&gt;');&#10;    js.appendChild(pre);&#10;    for (j in array[i][2]) {&#10;        pre = document.createElement('pre');&#10;        if (array[i][2][j].comment) {&#10;            pre.classList.add('comment');&#10;            pre.innerHTML = htmlentities.encode('// ' + array[i][2][j].comment);&#10;            string = '';&#10;        } else {&#10;            string = array[i][2][j].js;&#10;            pre.innerHTML = htmlentities.encode(string);&#10;        }&#10;        code += string;&#10;        js.appendChild(pre);&#10;        count++;&#10;    }&#10;    pre = document.createElement('pre');&#10;    pre.classList.add('tag');&#10;    pre.innerHTML = htmlentities.encode('&lt;/script&gt;');&#10;    js.appendChild(pre);&#10;    if (count != 0) card.appendChild(js);&#10;    jsCode.push(code);&#10;    code = '';&#10;    count = 0;&#10;    let output = document.createElement('div');&#10;    output.classList.add('output');&#10;    for (j in array[i][3]) {&#10;        pre = document.createElement('pre');&#10;        if (array[i][3][j].comment) pre.classList.add('comment');&#10;        pre.innerHTML = htmlentities.encode(array[i][3][j].output);&#10;        output.appendChild(pre);&#10;        count++;&#10;    }&#10;    if (count != 0) card.appendChild(output);&#10;    count = 0;&#10;    if (card.childElementCount == 0) card.style.display = &#34;none&#34;;&#10;    document.body.appendChild(card);&#10;    let button;&#10;    if (array[i][4].render) {&#10;        buttonContainer = document.createElement('div');&#10;        buttonContainer.classList.add('button-container');&#10;        button = document.createElement('div');&#10;        button.classList.add('button');&#10;        button.innerHTML = 'render';&#10;        buttonContainer.appendChild(button);&#10;        card.appendChild(buttonContainer);&#10;        if (card.offsetHeight != 400) button.classList.add('x-space1');&#10;        else button.classList.add('x-space2');&#10;        if (card.offsetHeight != 400) button.classList.add('x-space1');&#10;    }&#10;}&#10;let buttons = document.querySelectorAll('.button');&#10;let buttonPointer = [];&#10;for (let i=0; i&lt;array.length; i++) {&#10;    if (array[i][4].render) {&#10;        buttonPointer.push(count)&#10;        modifyButtonYspace(count);&#10;        buttons[count].addEventListener('click', () =&gt; {buildApp(i)});&#10;        count++;&#10;    } else buttonPointer.push(null);&#10;}&#10;function modifyButtonYspace(i) {&#10;    let y1 = document.querySelectorAll('.card')[i].clientHeight;&#10;    let y2 = document.querySelectorAll('.card')[i].scrollHeight;&#10;    if (buttons[buttonPointer[i]]) {&#10;        if (y1 &gt;= 400 || y1 &gt;= y2) {&#10;            buttons[buttonPointer[i]].classList.add('y-space');&#10;        } else {&#10;            buttons[buttonPointer[i]].classList.remove('y-space');&#10;        }&#10;    }&#10;}&#10;const ButtonSizeUpdate = () =&gt; {for (i in array) modifyButtonYspace(i)};&#10;window.addEventListener('resize', ButtonSizeUpdate);&#10;ButtonSizeUpdate();&#10;function buildApp(i) {&#10;    if (document.querySelector('.app-container') != null) document.querySelector('.app-container').remove();&#10;    let appContainer = document.createElement('div');&#10;    appContainer.classList.add('app-container');&#10;    let background = document.createElement('div');&#10;    background.classList.add('background');&#10;    background.addEventListener('click', () =&gt; {appContainer.remove();document.body.style.overflow = 'auto';});&#10;    appContainer.appendChild(background);&#10;    let iframe = document.createElement('iframe');&#10;    iframe.classList.add('iframe');&#10;    let html = '&lt;body&gt;'+`&lt;style&gt;`+cssCode[i]+`&lt;/style&gt;`+htmlCode[i]+`&lt;script&gt;`+jsCode[i]+`&lt;/script&gt;`+'&lt;/body&gt;';&#10;    iframe.src = 'data:text/html;charset=utf-8,' + encodeURI(html);&#10;    appContainer.appendChild(iframe);&#10;    document.body.style.overflow = 'hidden';&#10;    document.body.appendChild(appContainer);&#10;    console.log(html);&#10;}
+<!-- js here -->
+</pre>
+          </div>
+        </div>
+
+        <!-- left side -->
+
+        <!-- right side -->
+
+        <!-- Main Display -->
+
+        <div class="d2-1">
+          <iframe id=body class="body" src=".\app\index.html"></iframe>
+        </div>
+
+        <!-- Main Display -->
+
+        <!-- right side -->
+
+      </div>
+
+      <!-- 2 links forward & back -->
+      <div class="display-main-links-master-container">
+        <div class="display-main-links-container">
+          <!-- link 1 -->
+          <a class="display-main-link" href="#">test link</a>
+        </div>
+        <div class="display-main-links-container">
+          <!-- link 2 -->
+          <a class="display-main-link" href="#">test link</a>
+        </div>
+      </div>
+
+    </div>
+
+  <script src="template.js"></script>
+
+  </body>
+</html>
